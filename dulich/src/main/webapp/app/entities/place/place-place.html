@@ -130,18 +130,11 @@ a:hover{
             </div>
 
 
-            <div class="row list-group">
-              <div class="list-group-item active"><h5 class="font-weight-bold mx-auto" align="center"><strong>khách sạn việt nam</strong></h5>
-              </div>
-              <a href="#" class="list-group-item">khách sạn Đà Lạt</a>
-              <a href="#" class="list-group-item">khách sạn Đà Nẵng </a>
-              <a href="#" class="list-group-item">khách sạn Hà Nội</a>
-              <a href="#" class="list-group-item">khách sạn Hội An</a>
-              <a href="#" class="list-group-item">khách sạn Huế</a>
-              <a href="#" class="list-group-item">khách sạn Nha Trang</a>
-              <a href="#" class="list-group-item">khách sạn Sài Gòn</a>
-              <a href="#" class="list-group-item">khách sạn Vũng Tàu</a>
-            </div>
+            <div class="row list-group ">
+         <div class="list-group-item active"><h5 class="font-weight-bold mx-auto" align="center"><strong>Các khách sạn tốt</strong></h5>
+               </div>
+        <a href="#" class="list-group-item" ng-repeat="hotel in vm.hotels | limitTo: 5">{{hotel.nameHotel}}</a>
+      </div>
 
 
       </div>

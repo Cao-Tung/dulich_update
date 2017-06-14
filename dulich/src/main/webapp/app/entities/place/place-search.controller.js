@@ -19,7 +19,7 @@
         // vm.hotels = hotels;
         // -- pagination -->
         vm.sr= postsearch;
-        // vm.postnew = postnew;
+        vm.postnew = postnew;
        // -- pagination -->
         vm.mid=1;
         vm.currentPage=1; //trang hiện tại là 1
@@ -59,7 +59,7 @@
 
             function onSuccess(data) {
                 // console.log(data);
-                vm.sr=data;
+                vm.datas=data;
                 // console.log(vm.sr);
             }
 
@@ -68,7 +68,7 @@
             }
           }
           else{
-            vm.sr=postsview;
+            vm.datas=postsview;
           }
      }
     
