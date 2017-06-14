@@ -15,6 +15,7 @@
         vm.byteSize = DataUtils.byteSize;
 
         loadAll();
+        
         vm.search = function(){
           if($scope.title!=undefined && $scope.title != ""){
          console.log($scope.title);
@@ -35,7 +36,8 @@
           else{
             vm.posts=loadAll();
           }
-        }
+     }
+
         function loadAll() {
             Post.query(function(result) {
                 vm.posts = result;
