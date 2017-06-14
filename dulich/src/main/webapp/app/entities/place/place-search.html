@@ -34,11 +34,11 @@
 <div class="container" style="margin-top: 5px;">
   <div class="row">
     <div class="col-md-8 col-xs-8 ">
-      <div class=" row container" style="margin: 5px auto;">
+      <!-- <div class=" row container" style="margin: 5px auto;">
       <form ng-submit="vm.search()">
           <input type="search"  ng-model="title" placeholder="Nhập nội dung tìm kiếm...">   
       </form> 
-      </div>
+      </div> -->
       <div class="row">
                   <div class="col-md-6 region" ng-repeat="data in vm.datas">
                     <div class="card-noborder hoverable">
@@ -52,8 +52,7 @@
                                 <span class="date "><i class="fa fa-clock-o blue-text" aria-hidden="true"></i>{{data.createDate}}</span>&nbsp &nbsp 
                                 <span class="view"><i class="fa fa-eye blue-text" aria-hidden="true"></i>{{data.view}}</span>
                             </small>
-                              <p  class="text-justify text-muted" ng-bind-html="data.content">
-                            </p>
+                              
                         </div>
                       </div>
                     </div>
